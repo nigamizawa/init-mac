@@ -1,7 +1,9 @@
 # brew
 
 Brewfileを正とし、Brewfileに記載されていないものは定期的に削除する。  
-必要なものはちゃんとBrewfileに記載しよう！
+必要なものはちゃんとBrewfileに記載しよう！  
+GUI系のapplicationも基本的にcaskで管理する。
+何らかの理由で手動でインストールしたやつらは[ここ](./doc/outside-of-brew.md)
 
 ## commands
 
@@ -34,6 +36,10 @@ brew bundle cleanup
 
 - [パッケージ一覧](./doc/packages.md)
 
+## 手動でインストールしたやつら
+手動でインストールした。ということを記録したければ。（記載がない＝ゴミ🧟‍♀️）
+
+- [outside-of-brew](./doc/outside-of-brew.md)
 
 ## initelプロセッサでしか動作しないAppについて
 
