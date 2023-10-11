@@ -3,16 +3,20 @@
 vscodeの設定をgitによる履歴管理を行う。
 設定の同期だけならば、ポータブルモードとか、Settings Syncとかあるっぽいけど設定変更の履歴まで管理できないみたい。
 
+
 ## vscodeの設定ファイル一覧概要
 
 macだと`~/Library/Application\ Support/Code/User/`に設定ファイルが格納されている
 
 - [settings.json](./settings.json) : 設定全般
 - [keybindings.json](./keybindings.json) : キーバインド
-- [extensions](./extensions): 拡張機能
 - [init_vscode_settings.sh](init_vscode_settings.sh): vscodeの初期設定スクリプト
 
 ## 各種設定ファイル詳細
+
+### 拡張機能について
+
+なんかhomebrewで管理できるみたいw
 
 ### init_vscode_settings.sh
 
@@ -21,7 +25,6 @@ macだと`~/Library/Application\ Support/Code/User/`に設定ファイルが格�
 1. 各種既存設定ファイルを`~/Library/Application\ Support/Code/User/`を削除する
    1. 対象は`settings.json`と`keybindings.json`
 2. 本プロジェクトの設定ファイルを`~/Library/Application\ Support/Code/User/`にシンボリックリンクする
-3. [extensions](./extensions)の内容をもとにextensionsをインストールする
 
 ## その他
 
