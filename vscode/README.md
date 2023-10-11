@@ -26,6 +26,18 @@ macだと`~/Library/Application\ Support/Code/User/`に設定ファイルが格�
    1. 対象は`settings.json`と`keybindings.json`
 2. 本プロジェクトの設定ファイルを`~/Library/Application\ Support/Code/User/`にシンボリックリンクする
 
+
+## そのうちやりたい（TODO）
+
+### 設定
+- vimrcの設定読み込み
+  - vscode用の設定ファイルとかあるといいかも
+- markdownで文末空白改行が出来ない問題修正
+  - 自動整形時に空白が消されるため
+
+### ショートカット
+- マウスなしでsource controlいい感じに触れる
+
 ## その他
 
 ### 参考ドキュメント、設定集
