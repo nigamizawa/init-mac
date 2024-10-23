@@ -1,7 +1,7 @@
 # brew
 
-Brewfileを正とし、Brewfileに記載されていないものは定期的に削除する。  
-必要なものはちゃんとBrewfileに記載しよう！  
+Brewfileを正とし、Brewfileに記載されていないものは定期的に削除する。
+必要なものはちゃんとBrewfileに記載しよう！
 GUI系のapplicationも基本的にcaskで管理する。
 何らかの理由で手動でインストールしたやつらは[ここ](./doc/outside-of-brew.md)
 
@@ -11,12 +11,15 @@ Write all installed casks/formulae/images/taps into a Brewfile in the current di
 ```
 brew bundle dump
 brew bundle dump --file ${file}
+
+よく使う
+brew bundle dump --brews --file ${file}
 brew bundle dump --cask #casks only
 ```
 
 Install packages from the Brewfile.
 ```
-brew bundle 
+brew bundle
 ```
 
 
@@ -43,10 +46,10 @@ brew bundle cleanup
 
 ## initelプロセッサでしか動作しないAppについて
 
-brewで諸々を管理する際、initelプロセッサでしか動作しないアプリケーションのことを考慮する必要がある。  
-[Rosetta](https://support.apple.com/ja-jp/HT211861)を利用することでApple Siliconでもintel用のAppを動作させることができる。  
+brewで諸々を管理する際、initelプロセッサでしか動作しないアプリケーションのことを考慮する必要がある。
+[Rosetta](https://support.apple.com/ja-jp/HT211861)を利用することでApple Siliconでもintel用のAppを動作させることができる。
 しかし、brewでこれらのAppを管理する場合、公式での手順通りに管理すると混在し扱いが煩雑になってしまうので、
-アーキテクチャごとに別々のbrewを管理する手法を取るとする。  
+アーキテクチャごとに別々のbrewを管理する手法を取るとする。
 
 ### 各種パス
 - arm64e(AppleSilicon) -> /opt/homebrew/bin/brew
@@ -68,4 +71,3 @@ fi
 
 ### ref
 https://zenn.dev/junjunjunk/articles/4b230519d87de4
-

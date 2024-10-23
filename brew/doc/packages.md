@@ -1,8 +1,8 @@
 # パッケージ一覧
+導入時のちょっとしたメモなど
 
-## rtx
-
-公式曰く、「多言語対応ランタイムマネージャー（asdf rust クローン）」  
+## mise（旧rtx）
+公式曰く、「多言語対応ランタイムマネージャー（asdf rust クローン）」
 `asdf`の上位互換、より早いw
 asdfと互換性があるので、設定とかはasdf公式が参考になるかも
 
@@ -13,7 +13,7 @@ asdfと互換性があるので、設定とかはasdf公式が参考になるか
 brew導入した際にgitも一緒に入ってくるが、それとは別にbrew管理下にあるgitを基本的に使用する
 
 ## docker
-brewコマンドでDocker Desktop for Macを入れるには `--cask`オプションが必要  
+brewコマンドでDocker Desktop for Macを入れるには `--cask`オプションが必要
 入れないとcliしか入ってこない
 
 ```

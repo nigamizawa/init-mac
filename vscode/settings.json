@@ -1,0 +1,69 @@
+{
+  // ====================================
+  // ファイル保存時の設定
+  // ====================================
+  // Auto Save(after 1000ms=1sec)
+  "files.autoSave": "afterDelay",
+
+  // hidden in Explorer
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "/node_modules": true
+  },
+
+  // EOL
+  "files.insertFinalNewline": true,
+  "files.eol": "\r\n",
+
+  // trim
+  "files.trimFinalNewlines": true, //最終行以降の空行を削除
+  "files.trimTrailingWhitespace": true, //末尾の空白を削除
+
+
+  // ====================================
+  // editor
+  // ====================================
+
+  "editor.minimap.enabled": false,
+
+  // 不要な空白を表示
+  "editor.renderWhitespace": "boundary",
+
+  // 整形
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+
+  "editor.tabSize": 2, // default: 4
+  "editor.insertSpaces": true,
+  "editor.guides.bracketPairs": true,
+
+  // ====================================
+  // Terminal
+  // ====================================
+  "terminal.integrated.scrollback": 10000,
+
+
+  // ====================================
+  // Vim
+  // ====================================
+  // key binding
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["Z", "Z"],
+      "commands": [":wq"]
+    }
+  ]
+  // TODO
+  // "vim.vimrc.enable": true,
+  // "vim.vimrc.path": "/path/to/.vimrc"
+}
